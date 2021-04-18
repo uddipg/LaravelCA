@@ -12,7 +12,7 @@ use App\Http\Requests\Admin\UpdateUsersRequest;
 class UsersController extends Controller
 {
     /**
-     * Display a listing of User.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,7 +28,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Show the form for creating new User.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -43,7 +43,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Store a newly created User in storage.
+     * 
      *
      * @param  \App\Http\Requests\StoreUsersRequest  $request
      * @return \Illuminate\Http\Response
@@ -62,7 +62,7 @@ class UsersController extends Controller
 
 
     /**
-     * Show the form for editing User.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -80,7 +80,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Update User in storage.
+     * 
      *
      * @param  \App\Http\Requests\UpdateUsersRequest  $request
      * @param  int  $id
@@ -101,7 +101,7 @@ class UsersController extends Controller
 
 
     /**
-     * Display User.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -118,7 +118,7 @@ class UsersController extends Controller
 
 
     /**
-     * Remove User from storage.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -135,7 +135,7 @@ class UsersController extends Controller
     }
 
     /**
-     * Delete all selected User at once.
+     *
      *
      * @param Request $request
      */

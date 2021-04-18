@@ -14,7 +14,7 @@ use App\Http\Requests\Admin\UpdateEventsRequest;
 class EventsController extends Controller
 {
     /**
-     * Display a listing of Event.
+     *
      *
      * @return \Illuminate\Http\Response
      */
@@ -26,7 +26,7 @@ class EventsController extends Controller
     }
 
     /**
-     * Display Event.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -34,14 +34,14 @@ class EventsController extends Controller
     public function show($id)
     {
         $now = Carbon::now()->toDateString();
-        // don't display tickets which are not available
+       
         $match = [
             ['event_id', '=', $id],
             ['available_from', '<=', $now],
             ['available_to', '>=', $now]
         ];
 
-        // used collect method to be able to sortBy
+        
         $tickets = Ticket::where($match)->orderBy('price')->get();
 
         $event = Event::findOrFail($id);

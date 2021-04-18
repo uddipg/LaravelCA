@@ -12,7 +12,6 @@ use App\Http\Requests\Admin\UpdateTicketsRequest;
 class TicketsController extends Controller
 {
     /**
-     * Display a listing of Ticket.
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,7 +27,7 @@ class TicketsController extends Controller
     }
 
     /**
-     * Show the form for creating new Ticket.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -43,7 +42,7 @@ class TicketsController extends Controller
     }
 
     /**
-     * Store a newly created Ticket in storage.
+     *
      *
      * @param  \App\Http\Requests\StoreTicketsRequest  $request
      * @return \Illuminate\Http\Response
@@ -62,7 +61,7 @@ class TicketsController extends Controller
 
 
     /**
-     * Show the form for editing Ticket.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -80,7 +79,7 @@ class TicketsController extends Controller
     }
 
     /**
-     * Update Ticket in storage.
+     * 
      *
      * @param  \App\Http\Requests\UpdateTicketsRequest  $request
      * @param  int  $id
@@ -101,7 +100,7 @@ class TicketsController extends Controller
 
 
     /**
-     * Display Ticket.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -118,7 +117,7 @@ class TicketsController extends Controller
 
 
     /**
-     * Remove Ticket from storage.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -135,7 +134,7 @@ class TicketsController extends Controller
     }
 
     /**
-     * Delete all selected Ticket at once.
+     * 
      *
      * @param Request $request
      */

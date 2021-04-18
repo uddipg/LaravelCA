@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Schema;
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     *
      *
      * @return void
      */
@@ -20,7 +20,11 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register any application services.
+     *
+     * 
+
+
+     
      *
      * @return void
      */

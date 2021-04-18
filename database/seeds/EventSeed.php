@@ -5,7 +5,8 @@ use Illuminate\Database\Seeder;
 class EventSeed extends Seeder
 {
     /**
-     * Run the database seeds.
+     * 
+     * 
      *
      * @return void
      */

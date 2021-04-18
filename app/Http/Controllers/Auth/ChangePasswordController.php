@@ -12,7 +12,7 @@ class ChangePasswordController extends Controller
 {
 
     /**
-     * Create a new controller instance.
+     *
      */
     public function __construct()
     {
@@ -20,14 +20,14 @@ class ChangePasswordController extends Controller
     }
 
     /**
-     * Where to redirect users after password is changed.
+     * 
      *
      * @var string $redirectTo
      */
     protected $redirectTo = '/change_password';
 
     /**
-     * Change password form
+     * 
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -39,7 +39,7 @@ class ChangePasswordController extends Controller
     }
 
     /**
-     * Change password.
+     * 
      *
      * @param Request $request
      * @return $this|\Illuminate\Http\RedirectResponse
@@ -58,7 +58,7 @@ class ChangePasswordController extends Controller
     }
 
     /**
-     * Get a validator for an incoming change password request.
+     * 
      *
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator

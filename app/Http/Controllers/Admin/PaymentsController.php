@@ -12,7 +12,7 @@ use App\Http\Requests\Admin\UpdatePaymentsRequest;
 class PaymentsController extends Controller
 {
     /**
-     * Display a listing of Payment.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,7 +28,7 @@ class PaymentsController extends Controller
     }
 
     /**
-     * Show the form for creating new Payment.
+     *
      *
      * @return \Illuminate\Http\Response
      */
@@ -41,7 +41,7 @@ class PaymentsController extends Controller
     }
 
     /**
-     * Store a newly created Payment in storage.
+     * 
      *
      * @param  \App\Http\Requests\StorePaymentsRequest  $request
      * @return \Illuminate\Http\Response
@@ -60,7 +60,7 @@ class PaymentsController extends Controller
 
 
     /**
-     * Display Payment.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

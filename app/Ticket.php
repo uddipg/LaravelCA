@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Ticket
+ *
  *
  * @package App
  * @property string $event
@@ -24,7 +24,7 @@ class Ticket extends Model
     
 
     /**
-     * Set to null if empty
+     * 
      * @param $input
      */
     public function setEventIdAttribute($input)
@@ -33,7 +33,7 @@ class Ticket extends Model
     }
 
     /**
-     * Set attribute to money format
+     * 
      * @param $input
      */
     public function setAmountAttribute($input)
@@ -42,7 +42,7 @@ class Ticket extends Model
     }
 
     /**
-     * Set attribute to date format
+     *
      * @param $input
      */
     public function setAvailableFromAttribute($input)
@@ -55,7 +55,7 @@ class Ticket extends Model
     }
 
     /**
-     * Get attribute from date format
+     * 
      * @param $input
      *
      * @return string
@@ -72,7 +72,7 @@ class Ticket extends Model
     }
 
     /**
-     * Set attribute to date format
+     * 
      * @param $input
      */
     public function setAvailableToAttribute($input)
@@ -85,7 +85,7 @@ class Ticket extends Model
     }
 
     /**
-     * Get attribute from date format
+     * 
      * @param $input
      *
      * @return string
@@ -102,7 +102,7 @@ class Ticket extends Model
     }
 
     /**
-     * Set attribute to date format
+     * 
      * @param $input
      */
     public function setPriceAttribute($input)

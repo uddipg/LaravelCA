@@ -30,14 +30,14 @@ class PaymentsController extends Controller
         }
 
         $now = Carbon::now()->toDateString();
-		// prevent obtaining tickets via crafted request
+		
         $match = [
             ['available_from', '<=', $now],
             ['available_to', '>=', $now]
         ];
         $tickets = Ticket::where($match)->findMany($ids);
 
-        // can we satisfy order at all?
+        
         $total = $this->validateTotal($tickets, $requestTickets, $requestTotal);
         if($total) {
             return $this->createStripeCharge($token, $total, $requestTickets, $email);
@@ -74,9 +74,7 @@ class PaymentsController extends Controller
         return redirect()->back()->with('message', 'Payment completed successfully.');
     }
 
-    // calculate tickets' price
-    // this is necessary due to price changes during payment
-    // and make sure we have available tickets
+    
     public function validateTotal($tickets, $requestTickets, $requestTotal)
     {
         $total = 0;
@@ -89,8 +87,7 @@ class PaymentsController extends Controller
         }
         $total = round($total, 2);
 
-        // compare requested order price against calculated
-        // this cannot pass if ticket price changes or some tickets are not available anymore
+        
         if ($total === $requestTotal) {
             return $total;
         }
@@ -106,15 +103,15 @@ class PaymentsController extends Controller
             $charge = Charge::create(array(
                 "amount" => $total * 100,
                 "currency" => "eur",
-                "description" => "Ticket charge", // needs better description
+                "description" => "Ticket charge", 
                 "source" => $token
             ));
         } catch (Card $e) {
-            // get error message from $charge response
+            
             return redirect()->back()->with('error', 'Your credit card has been declined.');
         }
 
-        // call transaction post charge
+       
         return $this->makeTransaction($requestTickets, $total, $email);
     }
 }

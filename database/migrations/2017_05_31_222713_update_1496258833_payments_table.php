@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class Update1496258833PaymentsTable extends Migration
 {
     /**
-     * Run the migrations.
+     *
      *
      * @return void
      */
@@ -20,7 +20,7 @@ class Update1496258833PaymentsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * 
      *
      * @return void
      */

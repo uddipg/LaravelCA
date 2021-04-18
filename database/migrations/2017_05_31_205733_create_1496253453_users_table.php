@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class Create1496253453UsersTable extends Migration
 {
     /**
-     * Run the migrations.
+     * 
      *
      * @return void
      */
@@ -29,7 +29,8 @@ class Create1496253453UsersTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * 
+     * 
      *
      * @return void
      */

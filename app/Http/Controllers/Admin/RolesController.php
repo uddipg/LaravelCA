@@ -12,7 +12,7 @@ use App\Http\Requests\Admin\UpdateRolesRequest;
 class RolesController extends Controller
 {
     /**
-     * Display a listing of Role.
+     *
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,7 +28,7 @@ class RolesController extends Controller
     }
 
     /**
-     * Show the form for creating new Role.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -41,7 +41,7 @@ class RolesController extends Controller
     }
 
     /**
-     * Store a newly created Role in storage.
+     * 
      *
      * @param  \App\Http\Requests\StoreRolesRequest  $request
      * @return \Illuminate\Http\Response
@@ -60,7 +60,7 @@ class RolesController extends Controller
 
 
     /**
-     * Show the form for editing Role.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -76,7 +76,7 @@ class RolesController extends Controller
     }
 
     /**
-     * Update Role in storage.
+     *
      *
      * @param  \App\Http\Requests\UpdateRolesRequest  $request
      * @param  int  $id
@@ -97,7 +97,7 @@ class RolesController extends Controller
 
 
     /**
-     * Display Role.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -116,7 +116,7 @@ class RolesController extends Controller
 
 
     /**
-     * Remove Role from storage.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -133,7 +133,7 @@ class RolesController extends Controller
     }
 
     /**
-     * Delete all selected Role at once.
+     * 
      *
      * @param Request $request
      */

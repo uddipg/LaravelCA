@@ -12,7 +12,7 @@ use App\Http\Requests\Admin\UpdateEventsRequest;
 class EventsController extends Controller
 {
     /**
-     * Display a listing of Event.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,7 +28,7 @@ class EventsController extends Controller
     }
 
     /**
-     * Show the form for creating new Event.
+     * 
      *
      * @return \Illuminate\Http\Response
      */
@@ -41,7 +41,6 @@ class EventsController extends Controller
     }
 
     /**
-     * Store a newly created Event in storage.
      *
      * @param  \App\Http\Requests\StoreEventsRequest  $request
      * @return \Illuminate\Http\Response
@@ -60,7 +59,7 @@ class EventsController extends Controller
 
 
     /**
-     * Show the form for editing Event.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -76,7 +75,7 @@ class EventsController extends Controller
     }
 
     /**
-     * Update Event in storage.
+     * 
      *
      * @param  \App\Http\Requests\UpdateEventsRequest  $request
      * @param  int  $id
@@ -97,7 +96,7 @@ class EventsController extends Controller
 
 
     /**
-     * Display Event.
+     * 
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -116,7 +115,7 @@ class EventsController extends Controller
 
 
     /**
-     * Remove Event from storage.
+     *
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -133,7 +132,7 @@ class EventsController extends Controller
     }
 
     /**
-     * Delete all selected Event at once.
+     *
      *
      * @param Request $request
      */

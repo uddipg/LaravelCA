@@ -9,7 +9,7 @@ trait FileUploadTrait
 {
 
     /**
-     * File upload trait used in controllers to upload files
+     *
      */
     public function saveFiles(Request $request)
     {
@@ -23,7 +23,13 @@ trait FileUploadTrait
         foreach ($request->all() as $key => $value) {
             if ($request->hasFile($key)) {
                 if ($request->has($key . '_max_width') && $request->has($key . '_max_height')) {
-                    // Check file width
+                    
+
+
+
+
+
+                    
                     $filename = time() . '-' . $request->file($key)->getClientOriginalName();
                     $file     = $request->file($key);
                     $image    = Image::make($file);

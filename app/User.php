@@ -22,7 +22,7 @@ class User extends Authenticatable
     
     
     /**
-     * Hash password
+     * 
      * @param $input
      */
     public function setPasswordAttribute($input)
@@ -33,7 +33,7 @@ class User extends Authenticatable
     
 
     /**
-     * Set to null if empty
+     *
      * @param $input
      */
     public function setRoleIdAttribute($input)

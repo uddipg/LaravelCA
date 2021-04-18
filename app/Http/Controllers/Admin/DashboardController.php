@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     /**
-     * Create a new controller instance.
+     *
      *
      * @return void
      */
@@ -19,7 +19,7 @@ class DashboardController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     *
      *
      * @return \Illuminate\Http\Response
      */

@@ -4,7 +4,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Payment
+ *
  *
  * @package App
  * @property string $email
@@ -17,7 +17,7 @@ class Payment extends Model
     
 
     /**
-     * Set attribute to date format
+     *
      * @param $input
      */
     public function setAmountAttribute($input)

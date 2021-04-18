@@ -6,7 +6,7 @@ use Carbon\Carbon;
 class TicketSeed extends Seeder
 {
     /**
-     * Run the database seeds.
+     * 
      *
      * @return void
      */

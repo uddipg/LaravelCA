@@ -8,7 +8,7 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvid
 class AuthServiceProvider extends ServiceProvider
 {
     /**
-     * The policy mappings for the application.
+     * 
      *
      * @var array
      */
@@ -17,7 +17,7 @@ class AuthServiceProvider extends ServiceProvider
     ];
 
     /**
-     * Register any authentication / authorization services.
+     *
      *
      * @return void
      */
@@ -28,12 +28,12 @@ class AuthServiceProvider extends ServiceProvider
         $user = \Auth::user();
 
         
-        // Auth gates for: User management
+        
         Gate::define('user_management_access', function ($user) {
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Roles
+        
         Gate::define('role_access', function ($user) {
             return in_array($user->role_id, [1]);
         });
@@ -50,7 +50,7 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Users
+        
         Gate::define('user_access', function ($user) {
             return in_array($user->role_id, [1]);
         });
@@ -67,7 +67,7 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Events
+        
         Gate::define('event_access', function ($user) {
             return in_array($user->role_id, [1, 2]);
         });
@@ -84,7 +84,7 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Tickets
+        
         Gate::define('ticket_access', function ($user) {
             return in_array($user->role_id, [1, 2]);
         });
@@ -101,7 +101,8 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Payments
+        
+        
         Gate::define('payment_access', function ($user) {
             return in_array($user->role_id, [1, 2]);
         });

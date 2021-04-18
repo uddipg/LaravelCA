@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 class Create1496254205EventsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * 
      *
      * @return void
      */
@@ -29,8 +29,7 @@ class Create1496254205EventsTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
+     * 
      * @return void
      */
     public function down()

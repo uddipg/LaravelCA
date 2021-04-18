@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Event
+ * 
  *
  * @package App
  * @property string $title
@@ -22,7 +22,7 @@ class Event extends Model
     
 
     /**
-     * Set attribute to date format
+     * 
      * @param $input
      */
     public function setStartTimeAttribute($input)
@@ -35,7 +35,7 @@ class Event extends Model
     }
 
     /**
-     * Get attribute from date format
+     * 
      * @param $input
      *
      * @return string

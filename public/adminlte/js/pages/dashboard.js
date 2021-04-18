@@ -1,15 +1,11 @@
-/*
- * Author: Abdullah A Almsaeed
- * Date: 4 Jan 2014
- * Description:
- *      This is a demo file used only for the main dashboard (index.html)
- **/
+
+
 
 $(function () {
 
   "use strict";
 
-  //Make the dashboard widgets sortable Using jquery UI
+  //
   $(".connectedSortable").sortable({
     placeholder: "sort-highlight",
     connectWith: ".connectedSortable",
@@ -19,7 +15,7 @@ $(function () {
   });
   $(".connectedSortable .box-header, .connectedSortable .nav-tabs-custom").css("cursor", "move");
 
-  //jQuery UI sortable for the todo list
+  //
   $(".todo-list").sortable({
     placeholder: "sort-highlight",
     handle: ".handle",
@@ -27,7 +23,7 @@ $(function () {
     zIndex: 999999
   });
 
-  //bootstrap WYSIHTML5 - text editor
+  /
   $(".textarea").wysihtml5();
 
   $('.daterange').daterangepicker({
@@ -45,24 +41,24 @@ $(function () {
     window.alert("You chose: " + start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
   });
 
-  /* jQueryKnob */
+
   $(".knob").knob();
 
-  //jvectormap data
+ 
   var visitorsData = {
-    "US": 398, //USA
-    "SA": 400, //Saudi Arabia
-    "CA": 1000, //Canada
-    "DE": 500, //Germany
-    "FR": 760, //France
-    "CN": 300, //China
-    "AU": 700, //Australia
-    "BR": 600, //Brazil
-    "IN": 800, //India
-    "GB": 320, //Great Britain
-    "RU": 3000 //Russia
+    "US": 398,
+    "SA": 400, 
+    "CA": 1000, 
+    "DE": 500, 
+    "FR": 760, 
+    "CN": 300, 
+    "AU": 700, 
+    "BR": 600, 
+    "IN": 800, 
+    "GB": 320, 
+    "RU": 3000 
   };
-  //World map by jvectormap
+
   $('#world-map').vectorMap({
     map: 'world_mill_en',
     backgroundColor: "transparent",
@@ -88,7 +84,7 @@ $(function () {
     }
   });
 
-  //Sparkline charts
+  
   var myvalues = [1000, 1200, 920, 927, 931, 1027, 819, 930, 1021];
   $('#sparkline-1').sparkline(myvalues, {
     type: 'line',
@@ -114,16 +110,15 @@ $(function () {
     width: '80'
   });
 
-  //The Calender
+
   $("#calendar").datepicker();
 
-  //SLIMSCROLL FOR CHAT WIDGET
+
   $('#chat-box').slimScroll({
     height: '250px'
   });
 
-  /* Morris.js Charts */
-  // Sales chart
+  
   var area = new Morris.Area({
     element: 'revenue-chart',
     resize: true,
@@ -188,14 +183,14 @@ $(function () {
     hideHover: 'auto'
   });
 
-  //Fix for charts under tabs
+  //
   $('.box ul.nav a').on('shown.bs.tab', function () {
     area.redraw();
     donut.redraw();
     line.redraw();
   });
 
-  /* The todo list plugin */
+  
   $(".todo-list").todolist({
     onCheck: function (ele) {
       window.console.log("The element has been checked");
