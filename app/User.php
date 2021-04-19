@@ -1,51 +1,27 @@
 <?php
+
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Hash;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-/**
- * Class User
- *
- * @package App
- * @property string $name
- * @property string $email
- * @property string $password
- * @property string $role
- * @property string $remember_token
-*/
 class User extends Authenticatable
 {
     use Notifiable;
-    protected $fillable = ['name', 'email', 'password', 'remember_token', 'role_id'];
-    
     
     /**
-     * 
-     * @param $input
-     */
-    public function setPasswordAttribute($input)
-    {
-        if ($input)
-            $this->attributes['password'] = app('hash')->needsRehash($input) ? Hash::make($input) : $input;
-    }
-    
+    * The attributes that aren't mass assignable.
+    *
+    * @var array
+    */
+    protected $guarded = ['remember_token'];
 
     /**
+     * The attributes that should be hidden for arrays.
      *
-     * @param $input
+     * @var array
      */
-    public function setRoleIdAttribute($input)
-    {
-        $this->attributes['role_id'] = $input ? $input : null;
-    }
-    
-    public function role()
-    {
-        return $this->belongsTo(Role::class, 'role_id');
-    }
-    
-    
-    
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 }
